@@ -1,0 +1,15 @@
+:root {
+	/* COLORS */
+	--neutral-200: hsl(210, 46%, 95%);
+	--neutral-400: hsl(0, 0%, 81%);
+
+	--violet: hsl(263, 55%, 52%);
+	--bluegray-400: hsl(217, 19%, 35%);
+	--bluegray-900: hsl(219, 29%, 14%);
+
+	/* TYPOGRAPHY */
+	--ff: "Barlow Semi Condensed", serif;
+	--fs-heading: 1.25rem;
+	--fs-body: 0.813rem;
+	--fs-xsmall: 0.688rem;
+}
