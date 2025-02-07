@@ -32,8 +32,38 @@ body {
 
 .quote-bg {
 	background-color: var(--violet);
+	background-image: url("./images/bg-pattern-quotation.svg");
+	background-repeat: no-repeat;
+	background-position: right 24px top 0;
 }
 
+.testimonial-container {
+	display: grid;
+	gap: 1.5rem;
+
+	.testimonial-card:nth-of-type(2) {
+		background-color: var(--bluegray-400);
+	}
+	.testimonial-card:nth-of-type(3) {
+		background-color: white;
+		color: var(--bluegray-400);
+	}
+	.testimonial-card:nth-of-type(4) {
+		background-color: var(--bluegray-900);
+	}
+	.testimonial-card:nth-of-type(5) {
+		background-color: white;
+		color: var(--bluegray-400);
+	}
+}
+
+.testimonial-card:nth-of-type(1) {
+	.testimonial-card__content {
+		p:nth-of-type(1) {
+			margin-bottom: 2.5rem;
+		}
+	}
+}
 .testimonial-card {
 	/* common styles */
 	display: grid;
@@ -57,15 +87,15 @@ body {
 	}
 	.testimonial-card__content {
 		display: grid;
-		gap: 2.5rem;
 
 		p:nth-of-type(1) {
+			margin-bottom: 1rem;
 			font-size: var(--fs-heading);
 		}
 		p:nth-of-type(2) {
 			opacity: 50%;
-            line-height: 1.5;
-            font-weight: 500;
+			line-height: 1.5;
+			font-weight: 500;
 		}
 	}
 }
