@@ -35,9 +35,16 @@ body {
 	background-image: url("./images/bg-pattern-quotation.svg");
 	background-repeat: no-repeat;
 	background-position: right 24px top 0;
+
+	@media (min-width: 90rem) {
+		background-position: right 74px top 0;
+	}
 }
 
 .testimonial-container {
+	max-width: 1110px;
+	width: 100%;
+	margin-inline: auto;
 	display: grid;
 	gap: 1.5rem;
 
@@ -54,6 +61,33 @@ body {
 	.testimonial-card:nth-of-type(5) {
 		background-color: white;
 		color: var(--bluegray-400);
+	}
+
+	@media (min-width: 58rem) {
+		grid-template-areas:
+			"daniel daniel daniel daniel jonathan kira"
+			"jeanette patrick patrick patrick patrick kira";
+
+		gap: 1.875rem;
+
+		.testimonial-card:nth-of-type(1) {
+			.testimonial-card__content p:nth-of-type(1) {
+				margin-bottom: 1rem;
+			}
+			grid-area: daniel;
+		}
+		.testimonial-card:nth-of-type(2) {
+			grid-area: jonathan;
+		}
+		.testimonial-card:nth-of-type(3) {
+			grid-area: jeanette;
+		}
+		.testimonial-card:nth-of-type(4) {
+			grid-area: patrick;
+		}
+		.testimonial-card:nth-of-type(5) {
+			grid-area: kira;
+		}
 	}
 }
 
